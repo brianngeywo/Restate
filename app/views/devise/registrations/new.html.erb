@@ -1,0 +1,48 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+ <%= render "devise/shared/error_messages", resource: resource %>
+  <section class="py-7 py-md-10 bg-light ">
+   <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+        <div class="card">
+          <div class="bg-primary text-center py-4">
+            <h2 class="font-weight-normal mb-4">Account Registration</h2>
+          </div>
+          <div class="card-body px-7 pt-7 pb-0">
+            <form>
+              <div class="form-group mb-7">
+                <label for="exampleInputText">Email*</label>
+                <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+                <em>Enter your email address.</em>
+              </div>
+              <div class="form-group mb-7">
+                <label for="exampleInputPassword1">Password*</label>
+                <% if @minimum_password_length %>
+                <em>(<%= @minimum_password_length %> characters minimum)</em>
+                <% end %><br />
+                <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
+              </div>
+              <div class="form-group mb-7">
+                <label for="exampleInputPassword1">password confirmation*</label>
+                <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+              </div>
+              <div class="form-group d-flex justify-content-between align-items-center mb-7">
+                <button type="submit" class="btn btn-outline-primary text-uppercase">
+                  Sign up
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer bg-transparent text-center">
+            <p class="mb-0">Already a member? 
+            <%= render "devise/shared/links" %>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+<% end %>
+

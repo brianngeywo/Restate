@@ -1,0 +1,42 @@
+<nav class="nav-menuzord nav-menuzord-transparent" style="opacity: 1;">
+    <div class="container clearfix">
+        <div id="menuzord" class="menuzord menuzord-responsive"><a href="javascript:void(0)" class="showhide"><em></em><em></em><em></em></a>
+
+        <a href="/" class="menuzord-brand">
+            <%= image_tag 'logo.png', size: "150x100" %>
+        </a>
+            <ul class="menuzord-menu menuzord-right menuzord-indented scrollable" style="max-height: 400px;">
+                <li class="item">
+                <a href="javascript:0">Home</span></a>
+                </li>
+                <li class="">
+                <%= link_to 'List rental', new_post_path %>
+                </li>
+                <li class="">
+                <a href="javascript:0">Pages</a>
+                </li>
+                <li class="">
+                <a href="blog.html">Blog</a>
+                </li>
+                <% if current_user %>
+                <li class="">
+                    <%= link_to 'posts', posts_path %>
+                </li>
+                <li class="">
+                    <%= link_to 'sign out', destroy_user_session_path, :method => :delete %>
+                </li>
+                <% else %>
+                <li class="">
+                    <%= link_to 'sign up', new_user_registration_path %>
+                </li>
+                <li class="">
+                    <%= link_to 'Log in', new_user_session_path %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+

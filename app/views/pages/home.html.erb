@@ -1,0 +1,269 @@
+<!-- ====================================
+———	BANNER
+===================================== -->
+<section class="banner">
+  <div class="container">
+    <div class="row text-center align-items-center justify-content-center" style="height:624px;">
+      <div class="col-12">
+        <!-- Banner Info -->
+        <div class="banner-info">
+          <h1 class="text-uppercase text-white mb-4">
+            Find good affordable housing near you
+          </h1>
+          <%# <p class="lead text-white">
+            Find good affordable housing near you
+          </p> %>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box-2">
+          <form class="form-row justify-content-center" method="GET" action="listings-half-screen-map-list.html">
+
+            <div class="form-group col-md-5 col-lg-4">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Find</div>
+                </div>
+                <input type="text" class="form-control" placeholder="What are you looking for?">
+              </div>
+            </div>
+
+            <div class="form-group prepend-append col-md-5 col-lg-4">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Near</div>
+                </div>
+                <input type="text" class="form-control" placeholder="Location">
+                <div class="input-group-append">
+                  <span class="input-group-text" data-toggle="tooltip" data-placement="left" title="" data-original-title="Find my location">
+                    <i class="icon-listy icon-target" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group col-md-3 col-lg-2">
+              <button type="submit" class="btn btn-block btn-primary">Search
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================
+<%= form_for "", url: posts_path, role: "search", :method => :GET do %>
+  <%= text_field_tag :search, @search_term, placeholder: "search..."%>
+<% end %>
+===================================== -->
+  
+
+<!-- ====================================
+———	QUOTES
+===================================== -->
+<div class="uk-background-muted uk-padding uk-panel">
+  <div class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid">
+      <div class="center aligned row">
+        <div class="column">
+          <h3>"What a Company"</h3>
+          <p>That is what they all say about us</p>
+        </div>
+        <div class="column">
+          <h3>"I shouldn't have gone with their competitor."</h3>
+          <p>
+            <%= image_tag 'banner-img1.jpg', class:"ui avatar image" %> <b>Nan</b> Chief Fun Officer Acme Toys
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================
+———	INTERESTED
+===================================== -->
+<section class="pt-md-10 sec-pb-70 pt-8 pb-6 bg-light">
+	<div class="container">
+		<div class="section-title">
+			<h2>What are You Interested in?</h2>
+      <p>Explore and connect with great local businesses</p>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-lg-3 col-xs-12">
+        <a class="card py-5 hover-bg-primary bg-transparent" href="listings-half-screen-map-list.html">
+          <div class="card-body text-center">
+            <div class="icon-md">
+            <i data-feather="coffee" aria-hidden="true"></i>
+            </div>
+			<span class="h5">Restaurant</span>
+          </div>
+        </a>
+			</div>
+
+      <div class="col-md-4 col-lg-3 col-xs-12">
+        <a class="card py-5 hover-bg-primary bg-transparent" href="listings-half-screen-map-list.html">
+          <div class="card-body text-center">
+            <div class="icon-md">
+            <i data-feather="home" aria-hidden="true"></i>
+            </div>
+            <span class="h5">Hotels</span>
+          </div>
+        </a>
+			</div>
+
+      <div class="col-md-4 col-lg-3 col-xs-12">
+        <a class="card py-5 hover-bg-primary bg-transparent" href="listings-half-screen-map-list.html">
+          <div class="card-body text-center">
+            <div class="icon-md">
+            <i data-feather="music" aria-hidden="true"></i>
+            </div>
+            <span class="h5">Nightclubs</span>
+          </div>
+        </a>
+			</div>
+
+      <div class="col-md-4 col-lg-3 col-xs-12">
+        <a class="card py-5 hover-bg-primary bg-transparent" href="listings-half-screen-map-list.html">
+          <div class="card-body text-center">
+            <div class="icon-md">
+            <i data-feather="truck" aria-hidden="true"></i>
+            </div>
+            <span class="h5">Auto Motive</span>
+          </div>
+        </a>
+			</div>
+
+      <div class="col-md-4 col-lg-3 col-xs-12">
+        <a class="card py-5 hover-bg-primary bg-transparent" href="listings-half-screen-map-list.html">
+          <div class="card-body text-center">
+            <div class="icon-md">
+            <i data-feather="camera" aria-hidden="true"></i>
+            </div>
+            <span class="h5">Museums</span>
+          </div>
+        </a>
+			</div>
+
+      <div class="col-md-4 col-lg-3 col-xs-12">
+        <a class="card py-5 hover-bg-primary bg-transparent" href="listings-half-screen-map-list.html">
+          <div class="card-body text-center">
+            <div class="icon-md">
+            <i data-feather="film" aria-hidden="true"></i>
+            </div>
+            <span class="h5">Movie Theaters</span>
+          </div>
+        </a>
+			</div>
+
+      <div class="col-md-4 col-lg-3 col-xs-12">
+        <a class="card py-5 hover-bg-primary bg-transparent" href="listings-half-screen-map-list.html">
+          <div class="card-body text-center">
+            <div class="icon-md">
+            <i data-feather="shopping-bag" aria-hidden="true"></i>
+            </div>
+            <span class="h5">Shopping</span>
+          </div>
+        </a>
+			</div>
+
+      <div class="col-md-4 col-lg-3 col-xs-12">
+        <a class="card py-5 hover-bg-primary bg-transparent" href="listings-half-screen-map-list.html">
+          <div class="card-body text-center">
+            <div class="icon-md">
+            <i data-feather="more-horizontal" aria-hidden="true"></i>
+            </div>
+            <span class="h5">View All</span>
+          </div>
+        </a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- ====================================
+———	HOW IT WORK
+===================================== -->
+<section class="pt-8 pb-6 pt-md-10 sec-pb-70">
+	<div class="container">
+		<div class="section-title">
+			<h2>How it Works?</h2>
+			<p>This are some of most popular listing</p>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4 col-xs-12">
+				<div class="card">
+					<div class="mt-8 mb-3">
+                    <%= image_tag 'works-1.png', class:"mx-auto d-block" %>
+					</div>
+					<div class="card-body text-center pb-6">
+						<h3 class="h4">
+							<a class="mb-3 d-inline-block text-dark text-decoration-none" href="how-it-works.html">
+								Find what you want
+							</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-xs-12">
+				<div class="card">
+					<div class="mt-8 mb-3">
+						<%= image_tag 'works-2.png', class:"mx-auto d-block" %>
+					</div>
+					<div class="card-body text-center pb-6">
+						<h3 class="h4">
+							<a class="mb-3 d-inline-block text-dark text-decoration-none" href="how-it-works.html">
+								Review &amp; Plan your day
+							</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-xs-12">
+				<div class="card">
+					<div class="mt-8 mb-3">
+						<%= image_tag 'works-3.png', class:"mx-auto d-block" %>
+					</div>
+					<div class="card-body text-center pb-6">
+						<h3 class="h4">
+							<a class="mb-3 d-inline-block text-dark text-decoration-none" href="how-it-works.html">Explore Location</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- ====================================
+———	GET STARTED
+===================================== -->
+<section class="bg-primary py-7">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-9 col-xl-10 col-xs-12">
+        <h2 class="font-weight-normal mb-5 mb-md-0" style="color: rgba(255, 255, 255, .7)" >
+          <span class="text-white">Rental</span> is the <span class="text-white">best way</span> <br> to find great local business
+        </h2>
+			</div>
+			<div class="col-sm-3 col-xl-2 col-xs-12">
+				<div >
+          <%= link_to 'Get Started', new_user_registration_path , class:"btn btn-outline-white btn-block"%>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
